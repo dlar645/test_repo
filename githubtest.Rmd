@@ -26,6 +26,7 @@ ggplot(lyrics, aes(x=candidate))+
   labs(x="Candidate", y="Totals")
 ```
 
-"Hello"
+## New section
 
+Here is a new section that I am adding
 
