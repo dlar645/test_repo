@@ -1,0 +1,29 @@
+---
+title: "Githubtest"
+author: "Dylan Larsen"
+date: "10/29/2019"
+output: html_document
+---
+
+```{r message=FALSE}
+library(tidyverse)
+library(fivethirtyeight)
+library(moderndive)
+```
+
+```{r}
+data("hiphop_cand_lyrics")
+
+lyrics<-hiphop_cand_lyrics
+
+lyrics %>%
+  count(candidate)
+
+ggplot(lyrics, aes(x=candidate))+
+  geom_bar(fill="green")+
+  labs(x="Candidate", y="Totals")
+```
+
+"Hello"
+
+
